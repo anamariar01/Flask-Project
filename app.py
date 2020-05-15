@@ -3,6 +3,7 @@
 Created on Tue Apr 21 14:57:17 2020
 
 @author: etill
+@author: Ana Maria Rodriguez
 """
 
 #import statements
@@ -16,14 +17,17 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
+#only for testing, not relevant to website
 @app.route("/1006")
 def test():
     return render_template("index.html")
 
+#classes page
 @app.route("/classes")
 def classes():
     return render_template("classes.html")
 
+#assignments page
 @app.route("/assignments")
 def assign():
     return render_template("assignments.html")
